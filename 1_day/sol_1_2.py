@@ -10,12 +10,14 @@ list = []
 for line in content:
     list.append(int(line))
     
+    
+#539851    
 for i in list:
     for j in list:
         if (i + j == 2020):
             print(i,j, i* j)
 
-
+#212481360
 for i in list:
     for j in list:
         for k in list:

@@ -1,6 +1,7 @@
 import re
 import os
 
+
 path = os.path.dirname(os.path.realpath(__file__))
 
 file = open(os.path.join(path, "input.txt"), "r")
@@ -29,13 +30,16 @@ for i in data:
     policy = test.findall(password)
 
     #first password policy
+    #542
+    #Find passwords that constain same amount of letters as indicated
     length = len(policy)
     
     if (length >= lower and length <= upper):
         total_1 += 1
       
     #Second password policy
-    
+    #360
+    #Find passwords that conatin letter at specified index
     if ((password[lower - 1] == letter and password[upper - 1] != letter) or 
         (password[lower - 1] != letter and password[upper - 1] == letter)):
         total_2 += 1

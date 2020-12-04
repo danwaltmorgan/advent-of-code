@@ -10,14 +10,17 @@ list = []
 for line in content:
     list.append(int(line))
     
-    
-#539851    
+#Part 1    
+#539851
+#Find two numbers that add up to 2020    
 for i in list:
     for j in list:
         if (i + j == 2020):
             print(i,j, i* j)
 
+#Part 2
 #212481360
+#Find 3 numbers that add up to 2020
 for i in list:
     for j in list:
         for k in list:

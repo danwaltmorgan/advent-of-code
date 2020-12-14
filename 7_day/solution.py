@@ -30,7 +30,7 @@ while True:
         break
     
 
-#Part 2 54803
+#Part 2 54803   
 
 bags2 = ["shiny gold"]
 
